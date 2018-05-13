@@ -1,0 +1,191 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background: #dedede;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+/* Start header */
+#header {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 24px 0 24px;
+}
+
+.logo {
+    justify-content: flex-start;
+}
+
+.main-nav {
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.main-nav li {
+    padding-right: 16px;
+    display: inline;
+}
+
+.main-nav li:last-child {
+    padding-right: 0;
+}
+/* End header */
+
+/* Start sections */
+
+.section {
+    padding: 32px 0;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    background: #d8d8d8;
+}
+#learning {
+    background: #d8d8d8;
+}
+
+.hero-text {
+    color: #4a4a4a;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#news {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    background: #ffffff;
+}
+
+#news .main-column {
+    margin: 32px 0;
+    padding-right: 0;
+}
+
+#news .main-column img {
+    margin-right: 24px;
+}
+
+#news h2 {
+    padding: 32px 0 24px 0; 
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.sidebar {
+    width: 40%;
+    padding: 32px 0;
+    /* margin-left: 24px; */
+    border-left: 1px solid #d8d8d8;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.post:first-child {
+    margin-top: -16px;
+}
+
+.post-image {
+    width: 35%;
+    margin-right: 16px;
+}
+
+.post-content {
+    width: 65%;
+}
+
+.post img {
+    height: auto;
+    width: 100%;
+}
+
+.post.selected {
+    background: #d8d8d8;
+}
+
+#learning .title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.card-grid {
+    margin: 0 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* End sections */
+
+/* Helpers */
+
+.button {
+    background: #4a4a4a;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.main-column {
+    width: 60%;
+    padding-right: 24px;
+}
+
+.main-column img {
+    width: 100%;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.has-left-padding {
+    padding-left: 24px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .hide-desktop {
+        display: block;
+    }
+}
