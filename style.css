@@ -6,6 +6,11 @@ html, body {
     background: #dedede;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
@@ -275,22 +280,148 @@ padding-right: 0;
     width: 100%;
 }
 
-.hide-desktop {
+.mobile-nav {
     display: none;
 }
 
-.has-left-padding {
-    padding-left: 24px;
-}
-
-
-
 @media only screen and (max-width: 650px) {
-    .hide-mobile {
+
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #hero {
+        padding-top: 0;
+    }
+
+    header nav ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    #hero .main-column {
+        width: 100%;
+    }
+
+    #hero .container {
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+
+    .hero-text {
+        margin: 32px 16px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+        margin-bottom: 16px;
+    }
+
+    .hero-text p {
+        margin: 16px 0 24px;
+    }
+
+    .mobile-nav {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    #news .main-column,
+    .desktop-nav,
+    header .brand {
         display: none;
     }
 
-    .hide-desktop {
+    #news .sidebar {
+        width: 100%;
+        padding: 0;
+        border: none;
+        margin: 0;
+    }
+
+    .post {
         display: block;
+        padding: 0;
+    }
+
+    .post:first-child {
+        margin-top: 16px;
+    }
+
+    .post-image {
+        width: 100%;
+    }
+
+    .post-content {
+        margin: 16px 16px 32px;
+    }
+
+    .post.selected {
+        background: #fff;
+    }
+
+    #learning {
+        background: #fafafa;
+    }
+
+    #learning h2 {
+        margin-bottom: 32px;
+    }
+
+    .card {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card img, .card .tag, .card-inner p, .card-inner a {
+        display: none;
+    }
+
+    .card {
+        background: #d8d8d8;
+        margin-bottom: 8px;
+    }
+    
+    .card h3 {
+        padding-bottom: 0;
+    }
+
+    #thesis {
+        border-top: 1px solid #f1f1f1;
+        padding-bottom: 0;
+    }
+
+    #thesis .container {
+        margin: 0;
+    }
+
+    #thesis .main-column {
+        width: 100%;
+    }
+
+    #thesis .main-column h2, #thesis p {
+        display: none;
+    }
+
+    #thesis .sidebar {
+        display: none;
+    }
+
+    footer {
+        border-top: none;
+    }
+
+    footer a {
+        display: none;
     }
 }
